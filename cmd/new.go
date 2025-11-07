@@ -70,7 +70,8 @@ func runNew(cmd *cobra.Command, args []string) error {
 	}
 
 	fmt.Printf("Created folder %s\n", folderPath)
-	fmt.Printf("This folder will expire in %s.\n", config.FormatDuration(deadtime))
+	fmt.Printf("This folder will expire in %s.\n\n", config.FormatDuration(deadtime))
+	fmt.Printf("cd %s\n", folderPath)
 
 	return nil
 }
